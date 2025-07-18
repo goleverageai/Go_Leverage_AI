@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Lights on Staffing</title>
+    <meta name="description" content="Learn about Lights on Staffing's mission, values, and founder Steven Glynn. Professional recruitment services with a personal touch.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/LightsOnStaffing_Logo.webp" alt="Lights on Staffing Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="success-stories.html">Success Stories</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="margin-top: 80px;">
+        <!-- Page Header -->
+        <section class="section" style="background: linear-gradient(135deg, #169B62 0%, #FF883E 100%); color: white; text-align: center;">
+            <div class="container">
+                <h1>Committed to Excellence</h1>
+                <p style="font-size: 1.2rem; color: white;">Over 20 years of experience in the recruitment industry</p>
+            </div>
+        </section>
+
+        <!-- Your Recruitment Partner Section -->
+        <section class="section">
+            <div class="container">
+                <div class="two-column">
+                    <div class="content-column">
+                        <h2>Your Recruitment Partner</h2>
+                        <p>Lights on Staffing, led by Steven Glynn, is an AEC recruiting firm that combines the best aspects of internal and external recruitment models. With over 20 years of experience in the recruitment industry and a background as an Environmental Engineer, I bring a unique perspective to the table. My career began in engineering, but in 2004, I transitioned to recruitment, where I worked for one of the largest U.S. recruiting firms for 15 years, managing a team of recruiters. Over the years, I've learned that the most successful partnerships occur when I function as an internal recruiter, truly getting to know my clients. That's the foundation of my approach at Lights on Staffing—blending the strengths of both recruitment models to create a highly effective, retained search service.</p>
+                    </div>
+                    <div class="content-column">
+                        <div style="background: #f8f9fa; padding: 40px; border-radius: 10px; border-left: 5px solid #FF883E;">
+                            <h3>Our Mission</h3>
+                            <p style="font-style: italic; color: #666;">To illuminate the path between exceptional talent and outstanding opportunities, creating connections that transform careers and strengthen businesses through personalized, professional recruitment services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="section" style="background-color: #f8f9fa;">
+            <div class="container">
+                <h2 class="text-center mb-40">Our Core Values</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3 style="color: #FF883E;">Integrity</h3>
+                        <p>We conduct our business with the highest ethical standards, ensuring transparency and honesty in every interaction. Our reputation is built on trust, and we never compromise on our principles.</p>
+                    </div>
+                    <div class="card">
+                        <h3 style="color: #169B62;">Excellence</h3>
+                        <p>We strive for excellence in everything we do, from our initial candidate screening to our final placement follow-up. Quality is never an accident—it's the result of careful planning and execution.</p>
+                    </div>
+                    <div class="card">
+                        <h3 style="color: #FF883E;">Partnership</h3>
+                        <p>We view every relationship as a partnership, working collaboratively with both candidates and clients to achieve shared success. Your goals become our goals, and your success is our success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Section -->
+        <section class="section">
+            <div class="container">
+                <div class="two-column">
+                    <div class="content-column">
+                        <img src="assets/Steven_Glynns.jpeg" alt="Steven Glynn" style="width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    </div>
+                    <div class="content-column">
+                        <h2>Meet Our Founder</h2>
+                        <h3>Steven Glynn <a href="https://www.linkedin.com/in/stevenglynn/" target="_blank"><img src="assets/LI-In-Bug.png" alt="LinkedIn" class="linkedin-icon"></a></h3>
+                        <p style="color: #FF883E; font-weight: 600; margin-bottom: 20px;">Founder & Recruitment Consultant</p>
+                        
+                        <p>Steven Glynn brings over 20 years of experience in talent acquisition and human resources to Lights on Staffing. His passion for connecting people with opportunities that truly fit their skills and aspirations has been the driving force behind the company's success.</p>
+                        
+                        <p>With a background in both corporate recruitment and entrepreneurship, Steven understands the challenges faced by both job seekers and employers in today's dynamic market. His approach combines industry expertise with genuine care for people, ensuring that every placement is not just a transaction, but the beginning of a successful long-term relationship.</p>
+                        
+                        <p>Steven's commitment to excellence and his ability to see potential where others might not has resulted in countless successful placements across various industries. His vision for Lights on Staffing continues to guide the company's growth and success.</p>
+                        
+                        <div style="background: #169B62; color: white; padding: 20px; border-radius: 10px; margin-top: 30px;">
+                            <p style="font-style: italic; color: white; margin: 0;">"Every person has unique talents waiting to be discovered, and every organization has the potential for greatness. My role is to create the connections that unlock both."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Why Choose Lights on Staffing Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-40">Why Choose Lights on Staffing?</h2>
+    
+    <div class="feature-list">
+
+      <div class="feature-item">
+        <div class="feature-icon">💡</div>
+        <div class="feature-content">
+          <h3>Operational Excellence</h3>
+          <p>I operate as an internal recruiter, becoming an ambassador for your firm with a vested interest in a long-term partnership.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">💰</div>
+        <div class="feature-content">
+          <h3>Innovative Cost Model</h3>
+          <p>My services are incentive-based, meaning I only get paid properly when I make successful placements. This model not only drives my competitiveness and hunger but also saves your company money.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">⚖️</div>
+        <div class="feature-content">
+          <h3>Flexibility and Scalability</h3>
+          <p>You can adjust my involvement based on your company's evolving needs, giving you complete control over recruitment efforts.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">🤝</div>
+        <div class="feature-content">
+          <h3>Trust & Communication</h3>
+          <p>I build trust through responsive communication and thorough documentation, ensuring you are always informed and confident in the process.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">📈</div>
+        <div class="feature-content">
+          <h3>Results-Driven Approach</h3>
+          <p>I constantly prioritize my time to ensure that every effort is geared towards making successful placements. Recruitment is a numbers game, but strategic prioritization of outbound efforts (emails, referrals, phone calls) is key.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">🛡️</div>
+        <div class="feature-content">
+          <h3>Operational Advantage</h3>
+          <p>Partnering with Lights on Staffing provides a degree of separation in aggressive outbound recruitment efforts, maintaining a professional distance while securing the best candidates.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">⏱️</div>
+        <div class="feature-content">
+          <h3>Streamlining</h3>
+          <p>My goal is to save you time by pre-screening candidates and narrowing down the selection to the top 1 or 2 resumes that you’ll want to interview. With years of experience and industry knowledge, I ensure that the candidates presented are pre-vetted and ready to meet your expectations.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">🔥</div>
+        <div class="feature-content">
+          <h3>"Skin in the Game"</h3>
+          <p>For my clients drives communication and urgency. This is a key factor in the success of the partnership and the goal of making strategic hires.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="container text-center">
+                <h2>Ready to Experience the Difference?</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 30px;">Let us help you find the perfect match for your career or business needs.</p>
+                <a href="contact.html" class="btn" style="font-size: 1.1rem; padding: 15px 40px;">Get Started Today</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Lights on Staffing</h4>
+                    <p>Illuminating the path to exceptional talent and outstanding opportunities through professional recruitment services.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4>Get in Touch</h4>
+                    <p>Ready to find your perfect match?</p>
+                    <a href="contact.html" class="btn btn-white">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lights on Staffing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
