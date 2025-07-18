@@ -338,31 +338,42 @@ p {
 .tabs-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-bottom: 3rem;
-    gap: 2rem;
 }
 
 .tab {
-    padding: 15px 30px;
-    background: var(--light-gray);
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
+    flex: 1 1 200px;
+    max-width: 220px;
+    padding: 14px 16px;
+    background: var(--dark-gray, #111);
+    border: 2px solid transparent;
+    border-radius: 4px; /* less rounded, more sharp */
+    font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    position: relative;
-}
-
-.tab.active {
-    background: linear-gradient(135deg, var(--primary-red), var(--primary-magenta));
     color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
 }
 
 .tab:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px var(--shadow);
+    background-color: #222;
+    border-color: var(--primary-magenta);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(255, 0, 237, 0.2);
 }
+
+.tab.active {
+    background-color: var(--primary-red); /* solid background */
+    border-color: var(--primary-red);
+    color: var(--white);
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.4);
+}
+
 
 .tab-content {
     display: none;
