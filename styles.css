@@ -125,31 +125,23 @@ p {
 }
 
 /* Button Styles */
-.btn,
-.btn:link,
-.btn:visited,
-.btn:active,
-.btn:focus,
-.btn:hover,
-button.btn {
-  display: inline-block;
-  padding: 12px 32px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 0;
-  background: var(--primary-color, #1A73E8);
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.2s;
-  box-sizing: border-box;
-}
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, var(--primary-red), var(--primary-magenta));
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
     
 .btn:hover, button.btn:hover {
   background: var(--primary-dark, #155ab6);
-}
 }
 
 .btn::before {
