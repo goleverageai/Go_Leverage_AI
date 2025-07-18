@@ -131,7 +131,7 @@ p {
     background: linear-gradient(135deg, var(--primary-red), var(--primary-magenta));
     color: var(--white);
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 0px;
     font-weight: 600;
     font-size: 1rem;
     border: none;
