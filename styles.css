@@ -240,6 +240,13 @@ p {
     padding: 2rem;
 }
 
+.hero-content-bs {
+    text-align: center;
+    z-index: 2;
+    max-width: 800px;
+    padding: 1rem;
+}
+
 .hero-title {
     font-size: 4rem;
     font-weight: 700;
