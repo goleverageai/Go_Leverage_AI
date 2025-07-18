@@ -131,7 +131,7 @@ p {
     background: linear-gradient(135deg, var(--primary-red), var(--primary-magenta));
     color: var(--white);
     text-decoration: none;
-    border-radius: 0px;
+    border-radius: 50px;
     font-weight: 600;
     font-size: 1rem;
     border: none;
@@ -334,7 +334,7 @@ p {
     padding: 15px 30px;
     background: var(--light-gray);
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
