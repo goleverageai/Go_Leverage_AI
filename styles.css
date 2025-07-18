@@ -70,6 +70,11 @@ p {
     box-shadow: 0 2px 20px var(--shadow);
 }
 
+.header-contact-btn {
+  padding: 10px 24px;  /* Custom size for header button */
+  font-size: 1rem;
+}
+
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
