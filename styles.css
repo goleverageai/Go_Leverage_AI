@@ -213,7 +213,7 @@ p {
     position: relative;
     background: linear-gradient(135deg, rgba(0, 56, 255, 0.1), rgba(255, 0, 237, 0.1));
     overflow: hidden;
-    padding-top: 80px; /* Adjust value as needed */
+    padding-top: 100px; /* Adjust value as needed */
 }
 
 .hero::before {
