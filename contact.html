@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GoLeverage.AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="index.html"><img src="assets/LightsOnStaffing_Logo.webp" alt="GoLeverage.AI Logo" class="logo"></a>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="business-solutions.html" class="nav-link">Business Solutions</a></li>
+                <li><a href="agentic-ai.html" class="nav-link">Agentic AI</a></li>
+                <li><a href="real-estate.html" class="nav-link">Real Estate</a></li>
+                <li><a href="contact.html" class="btn" style="background: var(--primary-blue);">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 50vh; background: linear-gradient(135deg, rgba(0, 56, 255, 0.1), rgba(255, 0, 0, 0.1));">
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: 3rem;">Get In Touch</h1>
+            <p class="hero-subtitle">Ready to transform your business with AI? Let's discuss how we can help you achieve your goals.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Contact Form -->
+                <div class="card" style="padding: 3rem;">
+                    <h2 style="margin-bottom: 2rem; color: var(--primary-blue);">Send Us a Message</h2>
+                    <form id="contactForm" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <label for="firstName" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required class="form-input" style="width: 100%; border-radius: 10px; border: 2px solid #e0e0e0;">
+                            </div>
+                            <div>
+                                <label for="lastName" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required class="form-input" style="width: 100%; border-radius: 10px; border: 2px solid #e0e0e0;">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="form-input" style="width: 100%; border-radius: 10px; border: 2px solid #e0e0e0;">
+                        </div>
+                        <div>
+                            <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" style="width: 100%; border-radius: 10px; border: 2px solid #e0e0e0;">
+                        </div>
+                        <div>
+                            <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Company</label>
+                            <input type="text" id="company" name="company" class="form-input" style="width: 100%; border-radius: 10px; border: 2px solid #e0e0e0;">
+                        </div>
+                        <div>
+                            <label for="service" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Service Interest *</label>
+                            <select id="service" name="service" required style="width: 100%; padding: 15px 20px; border-radius: 10px; border: 2px solid #e0e0e0; font-size: 1rem; background: white;">
+                                <option value="">Select a service</option>
+                                <option value="business-solutions">Business Solutions</option>
+                                <option value="agentic-ai">Agentic AI</option>
+                                <option value="real-estate">Real Estate Solutions</option>
+                                <option value="consultation">General Consultation</option>
+                                <option value="custom">Custom Solution</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="budget" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Project Budget</label>
+                            <select id="budget" name="budget" style="width: 100%; padding: 15px 20px; border-radius: 10px; border: 2px solid #e0e0e0; font-size: 1rem; background: white;">
+                                <option value="">Select budget range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-15k">$5,000 - $15,000</option>
+                                <option value="15k-50k">$15,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="over-100k">Over $100,000</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message *</label>
+                            <textarea id="message" name="message" required rows="5" style="width: 100%; padding: 15px 20px; border-radius: 10px; border: 2px solid #e0e0e0; font-size: 1rem; font-family: inherit; resize: vertical;"></textarea>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" id="newsletter" name="newsletter" style="width: 18px; height: 18px;">
+                            <label for="newsletter" style="font-size: 0.9rem;">I'd like to receive updates about GoLeverage.AI services and insights</label>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%; padding: 15px; font-size: 1.1rem; margin-top: 1rem;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-red); margin-bottom: 1.5rem;">Contact Information</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="font-size: 1.5rem;">📧</div>
+                                <div>
+                                    <div style="font-weight: 600;">Email</div>
+                                    <div>info@goleverage.ai</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="font-size: 1.5rem;">📞</div>
+                                <div>
+                                    <div style="font-weight: 600;">Phone</div>
+                                    <div>+1 (555) 123-4567</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="font-size: 1.5rem;">📍</div>
+                                <div>
+                                    <div style="font-weight: 600;">Address</div>
+                                    <div>123 Innovation Drive<br>Tech City, TC 12345</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="font-size: 1.5rem;">🕒</div>
+                                <div>
+                                    <div style="font-weight: 600;">Business Hours</div>
+                                    <div>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="color: var(--primary-magenta); margin-bottom: 1.5rem;">Why Choose GoLeverage.AI?</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--primary-blue); font-weight: bold;">✓</span>
+                                <span>Expert team with 10+ years of AI experience</span>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--primary-blue); font-weight: bold;">✓</span>
+                                <span>Proven track record with 500+ successful projects</span>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--primary-blue); font-weight: bold;">✓</span>
+                                <span>24/7 support and maintenance</span>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--primary-blue); font-weight: bold;">✓</span>
+                                <span>Custom solutions tailored to your needs</span>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--primary-blue); font-weight: bold;">✓</span>
+                                <span>ROI-focused approach with measurable results</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3 style="color: var(--primary-blue);">How long does implementation take?</h3>
+                    <p>Implementation timelines vary based on project complexity. Simple solutions can be deployed in 2-4 weeks, while comprehensive enterprise solutions may take 3-6 months. We provide detailed timelines during our initial consultation.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary-red);">Do you offer ongoing support?</h3>
+                    <p>Yes, we provide comprehensive ongoing support including 24/7 monitoring, regular updates, performance optimization, and dedicated account management to ensure your AI solutions continue to deliver value.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary-magenta);">Can you integrate with existing systems?</h3>
+                    <p>Absolutely. Our solutions are designed to seamlessly integrate with your existing software, databases, and workflows. We work with popular platforms and can develop custom integrations as needed.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary-blue);">What industries do you serve?</h3>
+                    <p>We serve a wide range of industries including technology, healthcare, finance, manufacturing, retail, real estate, and professional services. Our solutions are customized for each industry's specific needs.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary-red);">How do you ensure data security?</h3>
+                    <p>We implement enterprise-grade security measures including encryption, secure APIs, compliance with industry standards (GDPR, HIPAA, SOC 2), and regular security audits to protect your sensitive data.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary-magenta);">What's your pricing model?</h3>
+                    <p>We offer flexible pricing models including project-based, subscription, and custom enterprise packages. Pricing depends on solution complexity, data volume, and support requirements. Contact us for a personalized quote.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Leadership</h2>
+            <div style="display: flex; justify-content: center;">
+                <div class="card" style="max-width: 400px; text-align: center;">
+                    <img src="assets/Steven_Glynns.jpeg" alt="Steven Glynns" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1.5rem; object-fit: cover;">
+                    <h3>Steven Glynns</h3>
+                    <p style="color: var(--primary-blue); font-weight: 600; margin-bottom: 1rem;">CEO & Founder</p>
+                    <p>With over 15 years of experience in AI and business transformation, Steven leads our mission to democratize AI technology and help businesses achieve unprecedented growth.</p>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="#" style="display: inline-block; margin: 0 0.5rem;">
+                            <img src="assets/LI-In-Bug.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GoLeverage.AI</h3>
+                    <p>Transforming businesses with cutting-edge AI solutions and innovative real estate technologies.</p>
+                    <div style="margin-top: 1rem;">
+                        <img src="assets/Steven_Glynns.jpeg" alt="Steven Glynns" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 1rem;">
+                        <a href="#" style="display: inline-block;">
+                            <img src="assets/LI-In-Bug.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="business-solutions.html">Business Solutions</a></li>
+                        <li><a href="agentic-ai.html">Agentic AI</a></li>
+                        <li><a href="real-estate.html">Real Estate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <p>Ready to get started?</p>
+                    <a href="contact.html" class="btn footer-btn">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GoLeverage.AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.firstName || !data.lastName || !data.email || !data.service || !data.message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            e.target.reset();
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, .section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Responsive form layout
+        function adjustFormLayout() {
+            const form = document.querySelector('#contactForm');
+            const firstRow = form.querySelector('div[style*="grid-template-columns"]');
+            
+            if (window.innerWidth <= 768) {
+                if (firstRow) {
+                    firstRow.style.gridTemplateColumns = '1fr';
+                }
+                // Adjust contact section layout
+                const contactSection = document.querySelector('.section .container > div[style*="grid-template-columns"]');
+                if (contactSection) {
+                    contactSection.style.gridTemplateColumns = '1fr';
+                    contactSection.style.gap = '2rem';
+                }
+            } else {
+                if (firstRow) {
+                    firstRow.style.gridTemplateColumns = '1fr 1fr';
+                }
+                const contactSection = document.querySelector('.section .container > div[style*="grid-template-columns"]');
+                if (contactSection) {
+                    contactSection.style.gridTemplateColumns = '1fr 1fr';
+                    contactSection.style.gap = '4rem';
+                }
+            }
+        }
+
+        // Call on load and resize
+        adjustFormLayout();
+        window.addEventListener('resize', adjustFormLayout);
+    </script>
+</body>
+</html>
+
