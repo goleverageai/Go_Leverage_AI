@@ -645,13 +645,18 @@ p {
     }
 }
 
+.floating-shapes {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Match your container’s height */
+    overflow: hidden;
+}
+
 .background-video {
-    position: fixed; /* Stays in place */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Fill the screen */
-    z-index: -1; /* Behind everything */
+    object-fit: cover; /* Makes it behave like background-size: cover */
 }
-
