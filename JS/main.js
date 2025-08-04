@@ -78,7 +78,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const heroVideo = document.getElementById('assets/161917-824623504_tiny.mp4');
     if (heroVideo) {
-        heroVideo.playbackRate = 0.5; // Adjust speed (0.5 = half speed)
+        heroVideo.playbackRate = 0.2; // Adjust speed (0.5 = half speed)
     }
 });
 
