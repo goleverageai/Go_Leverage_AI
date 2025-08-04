@@ -644,3 +644,14 @@ p {
         font-size: 5rem;
     }
 }
+
+.background-video {
+    position: fixed; /* Stays in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fill the screen */
+    z-index: -1; /* Behind everything */
+}
+
