@@ -73,4 +73,13 @@
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const heroVideo = document.getElementById('assets/161917-824623504_tiny.mp4');
+    if (heroVideo) {
+        heroVideo.playbackRate = 0.5; // Adjust speed (0.5 = half speed)
+    }
+});
+
     </script>
