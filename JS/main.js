@@ -82,4 +82,41 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const swiper = new Swiper('.testimonial-carousel', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    speed: 800,
+  });
+
+
+
+
+
+
+        
+
     </script>
