@@ -81,42 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
         heroVideo.playbackRate = 0.2; // Adjust speed (0.5 = half speed)
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  const swiper = new Swiper('.testimonial-carousel', {
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    speed: 800,
-  });
-
-
-
-
-
-
         
 
     </script>
