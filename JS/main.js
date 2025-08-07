@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-<script>
+
   document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".testimonial-card");
     let current = 0;
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(showNextTestimonial, 5000); // change every 5 seconds
   });
-</script>
+
 
 
 
