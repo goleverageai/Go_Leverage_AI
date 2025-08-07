@@ -95,64 +95,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
- document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.testimonial-card');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    const carouselWrapper = document.querySelector('.carousel-wrapper');
-    
-    let currentIndex = 0;
-    const totalCards = cards.length;
-    const autoplayInterval = 5000; // 5 seconds hold
 
-    let intervalId;
 
-    function showCard(index) {
-        cards.forEach(card => card.classList.remove('active'));
-        cards[index].classList.add('active');
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".testimonial-card");
+    let current = 0;
+
+    function showNextTestimonial() {
+      cards[current].classList.remove("active");
+      current = (current + 1) % cards.length;
+      cards[current].classList.add("active");
     }
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalCards;
-        showCard(currentIndex);
-    }
+    setInterval(showNextTestimonial, 5000); // change every 5 seconds
+  });
+</script>
 
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-        showCard(currentIndex);
-    }
-
-    // Start autoplay
-    function startAutoplay() {
-        intervalId = setInterval(nextSlide, autoplayInterval);
-    }
-
-    // Stop autoplay
-    function stopAutoplay() {
-        clearInterval(intervalId);
-    }
-
-    // Event listeners for navigation buttons
-    prevBtn.addEventListener('click', () => {
-        stopAutoplay();
-        prevSlide();
-        startAutoplay(); // Restart autoplay after manual navigation
-    });
-
-    nextBtn.addEventListener('click', () => {
-        stopAutoplay();
-        nextSlide();
-        startAutoplay(); // Restart autoplay
-    });
-
-    // Pause on hover
-    carouselWrapper.addEventListener('mouseenter', stopAutoplay);
-    carouselWrapper.addEventListener('mouseleave', startAutoplay);
-
-    // Initial load
-    showCard(currentIndex);
-    startAutoplay();
-});
 
 
 
