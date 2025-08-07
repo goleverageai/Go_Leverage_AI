@@ -81,6 +81,36 @@ document.addEventListener("DOMContentLoaded", function () {
         heroVideo.playbackRate = 0.2; // Adjust speed (0.5 = half speed)
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const testimonials = document.querySelectorAll('.testimonial-card');
+  let index = 0;
+
+  function showNextTestimonial() {
+    testimonials[index].classList.remove('active');
+    index = (index + 1) % testimonials.length;
+    testimonials[index].classList.add('active');
+  }
+
+  setInterval(showNextTestimonial, 5000); // change every 5 seconds
+
+
+
+
+
+
         
 
     </script>
