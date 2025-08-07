@@ -665,88 +665,74 @@ p {
 
 
 
-
-
-
-
-
-.testimonial-carousel {
-  padding-top: 2rem;
-}
-
-.testimonial-card {
-  background: white;
-  border-radius: 1rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.testimonial-inner {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.testimonial-logo {
-  flex: 1;
-  max-width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonial-logo img {
-  max-width: 100%;
-  height: auto;
-}
-
-.testimonial-text {
-  flex: 2;
+.carousel {
   position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
-.testimonial-text .quote-icon {
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.6s ease-in-out;
+  padding: 2rem;
+}
+
+.carousel-item:nth-child(1) { animation: fade 15s infinite; }
+.carousel-item:nth-child(2) { animation: fade 15s infinite 5s; }
+.carousel-item:nth-child(3) { animation: fade 15s infinite 10s; }
+
+@keyframes fade {
+  0%, 12% { opacity: 1; }
+  33%, 100% { opacity: 0; }
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+.logo img {
+  max-width: 80px;
+  object-fit: contain;
+}
+
+.text {
+  flex: 2;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.quote-icon {
   font-size: 3rem;
-  color: #0038ff;
+  color: var(--primary-red);
   line-height: 1;
   margin-bottom: 0.5rem;
 }
 
-.testimonial-text p {
-  font-style: italic;
-  font-size: 1rem;
-  color: #333;
-}
-
-.swiper-pagination {
+.dots {
   margin-top: 1.5rem;
-  text-align: center;
 }
-
-.swiper-pagination-bullet {
-  background: #888;
+.dots span {
+  display: inline-block;
+  width: 10px; height: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
   opacity: 0.5;
-  transition: all 0.3s ease;
+  animation: dotglow 15s infinite;
 }
 
-.swiper-pagination-bullet-active {
-  background: #0038ff;
-  opacity: 1;
+.dots span:nth-child(1) { animation-delay: 0s; }
+.dots span:nth-child(2) { animation-delay: 5s; }
+.dots span:nth-child(3) { animation-delay: 10s; }
+
+@keyframes dotglow {
+  0%, 12% { opacity: 1; background: var(--primary-red); }
+  33%, 100% { opacity: 0.5; background: #ccc; }
 }
-
-@media (max-width: 768px) {
-  .testimonial-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .testimonial-logo {
-    margin-bottom: 1rem;
-  }
-}
-
