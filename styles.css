@@ -649,6 +649,32 @@ p  { font-size: 1rem;   font-weight: 400; } /* ~16px */
 
 
 
+    .custom-checklist {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.custom-checklist li {
+    display: flex;
+    align-items: center; /* Vertically center icon & text */
+    margin: 0.5rem 0;
+    font-size: 1rem; /* Adjust text size if needed */
+}
+
+.custom-checklist li::before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+    background-image: url('assets/check-icon.png'); /* Replace with your actual icon path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+}
+
+
+
 
 
 
