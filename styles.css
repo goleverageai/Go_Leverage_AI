@@ -1,5 +1,6 @@
 /* GoLeverage.AI Master CSS */
 /* Color Palette: #ff0000 (red), #ff00ed (magenta), #0038ff (blue), white, black */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Orbitron:wght@400;700&family=Poppins:wght@400;600&display=swap');
 
 * {
     margin: 0;
@@ -20,36 +21,21 @@
 }
 
 body {
-    font-family: 'Cinzel', 'Orbitron', 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Cinzel', 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px; /* base size */
     line-height: 1.6;
     color: var(--black);
     background-color: var(--white);
     overflow-x: hidden;
-}
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
+h1, h2, h3, h4, h5, h6 
 
-h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-}
+h1 { font-size: 2.5rem; font-weight: 700; } /* ~40px */
+h2 { font-size: 2rem;   font-weight: 600; } /* ~32px */
+h3 { font-size: 1.5rem; font-weight: 600; } /* ~24px */
+p  { font-size: 1rem;   font-weight: 400; } /* ~16px */
 
-h2 {
-    font-size: 2.5rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
 
 /* Header Styles */
 .header {
@@ -651,10 +637,6 @@ p {
     height: 100%; /* Match your container’s height */
     overflow: hidden;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Orbitron:wght@400;700&family=Poppins:wght@400;600&display=swap');
-
-
 
 
 
