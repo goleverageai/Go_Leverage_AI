@@ -167,6 +167,51 @@ p  { font-size: 1rem;   font-weight: 400; } /* ~16px */
     box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* space between buttons */
+  margin-top: 2rem;
+}
+
+.hero-btn-group .btn {
+  flex: 1;            /* all buttons take equal width */
+  max-width: 250px;   /* optional max width per button */
+  text-align: center;
+  white-space: nowrap; /* prevent button text wrap */
+  padding-left: 0;    /* if your .btn has padding-left, adjust here */
+  padding-right: 0;   /* same for right padding */
+}
+
+
+
+
+
+
+
+    
+
+
+
+
+    
 /* Container Styles */
 .container {
     max-width: 1200px;
