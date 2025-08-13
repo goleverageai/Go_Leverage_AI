@@ -269,7 +269,7 @@ p  { font-size: 1rem;   font-weight: 400; } /* ~16px */
 .hero-content {
     text-align: center;
     z-index: 2;
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 1rem;
 }
 
