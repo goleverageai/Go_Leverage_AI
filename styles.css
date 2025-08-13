@@ -745,40 +745,7 @@ p  { font-size: 1rem;   font-weight: 400; } /* ~16px */
 
 
 
-    .stats-container {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-  padding: 3rem 2rem;
-  margin-top: -6rem; /* stronger hanging effect */
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
-  color: #222; /* dark text */
-}
-    .stats-column {
-  flex: 1 1 220px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-.stats-column:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-section {
-  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
-}
-
-
-
+ 
 
 
 
