@@ -424,7 +424,7 @@ p  { font-size: 1rem;   font-weight: 400; } /* ~16px */
 
 /* Cards Section */
 .cards-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
