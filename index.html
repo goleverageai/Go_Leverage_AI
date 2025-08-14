@@ -110,17 +110,6 @@
 </section>
 
 
-        
-     
-
-
-
-
-      
-
-
-
-
 
 <!-- Hover Shadow Effect -->
 <style>
@@ -129,34 +118,7 @@
   }
 </style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
 
     <!-- Testimonials Carousel -->
 <section class="section" style="background: var(--light-gray);">
@@ -237,28 +199,32 @@
                         </div>
                     </div>
                 </div>
+                <section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials-carousel">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- All .testimonial-card elements here -->
+                </div>
+                <!-- Navigation Arrows and Dots (only one set) -->
+                <button class="carousel-arrow carousel-arrow-prev" aria-label="Previous testimonial">
+                    <svg width="24" height="24" ...></svg>
+                </button>
+                <button class="carousel-arrow carousel-arrow-next" aria-label="Next testimonial">
+                    <svg width="24" height="24" ...></svg>
+                </button>
+                <div class="carousel-pagination">
+                    <button class="pagination-dot active" data-slide="0" aria-label="Go to testimonial 1"></button>
+                    <button class="pagination-dot" data-slide="1" aria-label="Go to testimonial 2"></button>
+                    <button class="pagination-dot" data-slide="2" aria-label="Go to testimonial 3"></button>
+                    <button class="pagination-dot" data-slide="3" aria-label="Go to testimonial 4"></button>
+                    <button class="pagination-dot" data-slide="4" aria-label="Go to testimonial 5"></button>
+                </div>
             </div>
-
-            <!-- Navigation Arrows -->
-            <button class="carousel-arrow carousel-arrow-prev" aria-label="Previous testimonial">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-            <button class="carousel-arrow carousel-arrow-next" aria-label="Next testimonial">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-
-            <!-- Pagination Dots -->
-            <div class="carousel-pagination">
-                <button class="pagination-dot active" data-slide="0" aria-label="Go to testimonial 1"></button>
-                <button class="pagination-dot" data-slide="1" aria-label="Go to testimonial 2"></button>
-                <button class="pagination-dot" data-slide="2" aria-label="Go to testimonial 3"></button>
-                <button class="pagination-dot" data-slide="3" aria-label="Go to testimonial 4"></button>
-                <button class="pagination-dot" data-slide="4" aria-label="Go to testimonial 5"></button>
-            </div>
+        </div>
+    </div>
+</section> 
         </div>
     </div>
 </section>
@@ -405,70 +371,86 @@
             observer.observe(el);
         });
 
-    // --- Testimonials Carousel Functionality ---
-        (function() {
-            const cards = document.querySelectorAll('.testimonial-card');
-            const prevBtn = document.querySelector('.carousel-arrow-prev');
-            const nextBtn = document.querySelector('.carousel-arrow-next');
-            const dots = document.querySelectorAll('.pagination-dot');
-            let current = 0;
-            let intervalId;
+       document.addEventListener('DOMContentLoaded', function() {
+    // Testimonials Carousel Functionality
 
-            function showCard(idx) {
-                cards.forEach((card, i) => {
-                    card.classList.toggle('active', i === idx);
-                });
-                dots.forEach((dot, i) => {
-                    dot.classList.toggle('active', i === idx);
-                });
-                current = idx;
-            }
+    // Get all testimonial cards
+    const cards = document.querySelectorAll('.testimonial-card');
+    // Get navigation arrow elements
+    const prevBtn = document.querySelector('.carousel-arrow-prev');
+    const nextBtn = document.querySelector('.carousel-arrow-next');
+    // Get pagination dot elements
+    const dots = document.querySelectorAll('.pagination-dot');
 
-            function nextCard() {
-                showCard((current + 1) % cards.length);
-            }
-            function prevCard() {
-                showCard((current - 1 + cards.length) % cards.length);
-            }
-            function gotoCard(idx) {
-                showCard(idx);
-            }
+    let current = 0;
+    let intervalId;
 
-            // Arrow listeners
-            nextBtn.addEventListener('click', () => {
-                nextCard();
-                restartInterval();
-            });
-            prevBtn.addEventListener('click', () => {
-                prevCard();
-                restartInterval();
-            });
+    // Function to show the active card and update dots
+    function showCard(idx) {
+        cards.forEach((card, i) => {
+            card.classList.toggle('active', i === idx);
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === idx);
+        });
+        current = idx;
+    }
 
-            // Dot listeners
-            dots.forEach((dot, idx) => {
-                dot.addEventListener('click', () => {
-                    gotoCard(idx);
-                    restartInterval();
-                });
-            });
+    // Show the next card
+    function nextCard() {
+        showCard((current + 1) % cards.length);
+    }
 
-            // Auto-advance every 5 seconds
-            function startInterval() {
-                intervalId = setInterval(nextCard, 5000);
-            }
-            function stopInterval() {
-                clearInterval(intervalId);
-            }
-            function restartInterval() {
-                stopInterval();
-                startInterval();
-            }
+    // Show the previous card
+    function prevCard() {
+        showCard((current - 1 + cards.length) % cards.length);
+    }
 
-            showCard(0);
-            startInterval();
-        })();
-        // --- End Testimonials Carousel ---
-    
+    // Go to a specific card
+    function gotoCard(idx) {
+        showCard(idx);
+    }
+
+    // Arrow listeners
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+            nextCard();
+            restartInterval();
+        });
+    }
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+            prevCard();
+            restartInterval();
+        });
+    }
+
+    // Dot listeners
+    dots.forEach(function(dot, idx) {
+        dot.addEventListener('click', function() {
+            gotoCard(idx);
+            restartInterval();
+        });
+    });
+
+    // Auto-advance every 5 seconds
+    function startInterval() {
+        intervalId = setInterval(nextCard, 5000);
+    }
+    function stopInterval() {
+        clearInterval(intervalId);
+    }
+    function restartInterval() {
+        stopInterval();
+        startInterval();
+    }
+
+    // Initialize carousel
+    if (cards.length > 0) {
+        showCard(0);
+        startInterval();
+    }
+});
     </script>
 
     </body>
