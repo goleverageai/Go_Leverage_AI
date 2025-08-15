@@ -6,6 +6,44 @@
     <title>GoLeverage.AI - Business Solutions & Real Estate</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <style>
+        /* Minimal carousel styles for clarity */
+        .carousel-track {
+            position: relative;
+            min-height: 200px;
+        }
+        .testimonial-card {
+            display: none;
+            transition: opacity 0.4s ease;
+        }
+        .testimonial-card.active {
+            display: block;
+        }
+        .carousel-arrow {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+        .carousel-pagination {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .pagination-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            border: none;
+            display: inline-block;
+            margin: 0 4px;
+            cursor: pointer;
+        }
+        .pagination-dot.active {
+            background: #ff0000;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -28,220 +66,161 @@
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        
-    <video autoplay muted loop playsinline 
-    style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1;">
-    <source src="assets/161917-824623504_tiny.mp4" type="video/mp4">
-    </video>
-
-
-    <div class="hero-content">
-  <h1 class="hero-title">
-    One Platform.<br />
-    Infinite Leverage.
-  </h1>
-  <p class="hero-subtitle">Build. Pitch. Scale. Repeat.</p>
- 
-        <div class="cards-grid">
-     <div class="card" onclick="window.location.href='business-solutions.html'" style="cursor: pointer;"> 
-                        <h4 style="color: #ff0000;">Explore<br>Business Solutions</h4>
-                        <p>Streamline operations, boost growth, and automate smarter.</p>
-                    </div>
-
-<div class="card" onclick="window.location.href='agentic-ai.html'" style="cursor: pointer;">
-                        <h4 style="color: #ff00ed;">Discover<br>Agentic AI</h4>
-                        <p>Autonomous AI agents to revolutionize your workflows.</p>
-                    </div>
-
-
-<div class="card" onclick="window.location.href='real-estate.html'" style="cursor: pointer;">
-                        <h4 style="color: #0038ff;">Grow<br>Real Estate</h4>
-                        <p>Smart property marketing & investment strategies.</p>
-                    </div>
-
-
-  
-    </section>
-
-   
-
-
-<!-- Why Choose GoLeverage.AI -->
-<section class="section" style="background-color: #ff0000; margin-top: -4rem; padding: 4rem 1rem; color: white;">
-  <div class="container" style="max-width: 1200px; margin: 0 auto;">
-
-    <!-- Title + Subtitle -->
-    <div style="text-align: center; margin-bottom: 3rem;">
-      <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">Leverage With Confidence</h2>
-      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; line-height: 1.5;">
-        Experience, empathy, and scalable solutions—crafted from lived realities and rigorous research to power your success.
-      </p>
-    </div>
-
-    <!-- Stats Columns -->
-    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem;">
-
-      <div style="flex: 1 1 220px; text-align: center;">
-        <img src="assets/local.png" alt="US Based Team Icon" style="width: 48px; height: 48px; margin: 0 auto 1rem;">
-        <h4 style="margin-bottom: 0.5rem;">100% U.S. Based Team</h4>
-        <p style="font-size: 0.9rem; line-height: 1.4;">No outsourcing, all experts right here for seamless collaboration.</p>
-      </div>
-
-      <div style="flex: 1 1 220px; text-align: center;">
-        <img src="assets/icon-dedicated-client.svg" alt="Dedicated Client Focus Icon" style="width: 48px; height: 48px; margin: 0 auto 1rem;">
-        <h4 style="margin-bottom: 0.5rem;">1:1 Dedicated Client Focus</h4>
-        <p style="font-size: 0.9rem; line-height: 1.4;">Personalized service ensuring your goals get our full attention.</p>
-      </div>
-
-      <div style="flex: 1 1 220px; text-align: center;">
-        <img src="assets/quick.png" alt="Response Time Icon" style="width: 48px; height: 48px; margin: 0 auto 1rem;">
-        <h4 style="margin-bottom: 0.5rem;">Under 2-Hour Response Time</h4>
-        <p style="font-size: 0.9rem; line-height: 1.4;">Fast, reliable communication when you need it most.</p>
-      </div>
-
-      <div style="flex: 1 1 220px; text-align: center;">
-        <img src="assets/icon-experience.svg" alt="Experience Icon" style="width: 48px; height: 48px; margin: 0 auto 1rem;">
-        <h4 style="margin-bottom: 0.5rem;">10+ Years, Qualified Team</h4>
-        <p style="font-size: 0.9rem; line-height: 1.4;">Deep industry expertise across marketing, AI, and real estate, with MBAs, PhDs, and licenses.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Hover Shadow Effect -->
-<style>
-  .card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  }
-</style>
-
-            
-
-    <!-- Testimonials Carousel -->
-<section class="section" style="background: var(--light-gray);">
-    <div class="container">
-        <h2 class="section-title">What Our Clients Say</h2>
-        
-        <div class="testimonials-carousel">
-            <!-- Carousel Container -->
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <!-- Testimonial Card 1 -->
-                    <div class="testimonial-card active">
-                        <div class="card-content">
-                            <div class="client-logo">
-                                <img src="https://via.placeholder.com/120x60/4A90E2/FFFFFF?text=TechCorp" alt="TechCorp Logo">
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="quote-icon">"</div>
-                                <p class="testimonial-text">GoLeverage.AI transformed our business operations completely. Their AI solutions increased our efficiency by 300% and reduced costs significantly. The team's expertise is unmatched.</p>
-                                <div class="client-info">- Sarah Johnson, CEO TechCorp</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 2 -->
-                    <div class="testimonial-card">
-                        <div class="card-content">
-                            <div class="client-logo">
-                                <img src="https://via.placeholder.com/120x60/E74C3C/FFFFFF?text=RealEstate+" alt="RealEstate+ Logo">
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="quote-icon">"</div>
-                                <p class="testimonial-text">The real estate solutions provided by GoLeverage.AI gave us a competitive edge in the market. Their property valuation AI is incredibly accurate and has streamlined our entire process.</p>
-                                <div class="client-info">- Michael Chen, Real Estate Investor</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 3 -->
-                    <div class="testimonial-card">
-                        <div class="card-content">
-                            <div class="client-logo">
-                                <img src="https://via.placeholder.com/120x60/27AE60/FFFFFF?text=OptiFlow" alt="OptiFlow Logo">
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="quote-icon">"</div>
-                                <p class="testimonial-text">Working with GoLeverage.AI has been a game-changer. Their agentic AI solutions work autonomously and have freed up our team to focus on strategic initiatives rather than routine tasks.</p>
-                                <div class="client-info">- Emily Rodriguez, Operations Director</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 4 -->
-                    <div class="testimonial-card">
-                        <div class="card-content">
-                            <div class="client-logo">
-                                <img src="https://via.placeholder.com/120x60/9B59B6/FFFFFF?text=InnovateLab" alt="InnovateLab Logo">
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="quote-icon">"</div>
-                                <p class="testimonial-text">The AI automation tools from GoLeverage.AI have revolutionized our workflow. We've seen a 250% increase in productivity and our clients are amazed by the results we deliver.</p>
-                                <div class="client-info">- David Park, CTO InnovateLab</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 5 -->
-                    <div class="testimonial-card">
-                        <div class="card-content">
-                            <div class="client-logo">
-                                <img src="https://via.placeholder.com/120x60/F39C12/FFFFFF?text=DataDriven" alt="DataDriven Logo">
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="quote-icon">"</div>
-                                <p class="testimonial-text">GoLeverage.AI's machine learning models have given us insights we never thought possible. Their predictive analytics have helped us make better business decisions and stay ahead of the competition.</p>
-                                <div class="client-info">- Lisa Thompson, Data Analyst</div>
-                            </div>
-                        </div>
-                    </div>
+        <video autoplay muted loop playsinline 
+        style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1;">
+        <source src="assets/161917-824623504_tiny.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                One Platform.<br />
+                Infinite Leverage.
+            </h1>
+            <p class="hero-subtitle">Build. Pitch. Scale. Repeat.</p>
+            <div class="cards-grid">
+                <div class="card" onclick="window.location.href='business-solutions.html'" style="cursor: pointer;"> 
+                    <h4 style="color: #ff0000;">Explore<br>Business Solutions</h4>
+                    <p>Streamline operations, boost growth, and automate smarter.</p>
                 </div>
-                <section class="section" style="background: var(--light-gray);">
-                <button class="carousel-arrow carousel-arrow-prev" aria-label="Previous testimonial">
-                    <svg width="24" height="24" ...></svg>
-                </button>
-                <button class="carousel-arrow carousel-arrow-next" aria-label="Next testimonial">
-                    <svg width="24" height="24" ...></svg>
-                </button>
-                <div class="carousel-pagination">
-                    <button class="pagination-dot active" data-slide="0" aria-label="Go to testimonial 1"></button>
-                    <button class="pagination-dot" data-slide="1" aria-label="Go to testimonial 2"></button>
-                    <button class="pagination-dot" data-slide="2" aria-label="Go to testimonial 3"></button>
-                    <button class="pagination-dot" data-slide="3" aria-label="Go to testimonial 4"></button>
-                    <button class="pagination-dot" data-slide="4" aria-label="Go to testimonial 5"></button>
+                <div class="card" onclick="window.location.href='agentic-ai.html'" style="cursor: pointer;">
+                    <h4 style="color: #ff00ed;">Discover<br>Agentic AI</h4>
+                    <p>Autonomous AI agents to revolutionize your workflows.</p>
+                </div>
+                <div class="card" onclick="window.location.href='real-estate.html'" style="cursor: pointer;">
+                    <h4 style="color: #0038ff;">Grow<br>Real Estate</h4>
+                    <p>Smart property marketing & investment strategies.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section> 
+    </section>
+
+    <!-- Why Choose GoLeverage.AI -->
+    <section class="section" style="background-color: #ff0000; margin-top: -4rem; padding: 4rem 1rem; color: white;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Title + Subtitle -->
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">Leverage With Confidence</h2>
+                <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; line-height: 1.5;">
+                    Experience, empathy, and scalable solutions—crafted from lived realities and rigorous research to power your success.
+                </p>
+            </div>
+            <!-- Stats Columns -->
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem;">
+                <div style="flex: 1 1 220px; text-align: center;">
+                    <img src="assets/local.png" alt="US Based Team Icon" style="width: 48px; height: 48px; margin: 0 auto 1rem;">
+                    <h4 style="margin-bottom: 0.5rem;">100% U.S. Based Team</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.4;">No outsourcing, all experts right here for seamless collaboration.</p>
+                </div>
+                <div style="flex: 1 1 220px; text-align: center;">
+                    <img src="assets/icon-dedicated-client.svg" alt="Dedicated Client Focus Icon" style="width: 48px; height: 48px; margin: 0 auto 1rem;">
+                    <h4 style="margin-bottom: 0.5rem;">1:1 Dedicated Client Focus</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.4;">Personalized service ensuring your goals get our full attention.</p>
+                </div>
+                <div style="flex: 1 1 220px; text-align: center;">
+                    <img src="assets/quick.png" alt="Response Time Icon" style="width: 48px; height: 48px; margin: 0 auto 1rem;">
+                    <h4 style="margin-bottom: 0.5rem;">Under 2-Hour Response Time</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.4;">Fast, reliable communication when you need it most.</p>
+                </div>
+                <div style="flex: 1 1 220px; text-align: center;">
+                    <img src="assets/icon-experience.svg" alt="Experience Icon" style="width: 48px; height: 48px; margin: 0 auto 1rem;">
+                    <h4 style="margin-bottom: 0.5rem;">10+ Years, Qualified Team</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.4;">Deep industry expertise across marketing, AI, and real estate, with MBAs, PhDs, and licenses.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    
-
-
-
-
-
-    
+    <!-- Testimonials Carousel -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="testimonial-card active">
+                            <div class="card-content">
+                                <div class="client-logo">
+                                    <img src="https://via.placeholder.com/120x60/4A90E2/FFFFFF?text=TechCorp" alt="TechCorp Logo">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">"</div>
+                                    <p class="testimonial-text">GoLeverage.AI transformed our business operations completely. Their AI solutions increased our efficiency by 300% and reduced costs significantly. The team's expertise is unmatched.</p>
+                                    <div class="client-info">- Sarah Johnson, CEO TechCorp</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="card-content">
+                                <div class="client-logo">
+                                    <img src="https://via.placeholder.com/120x60/E74C3C/FFFFFF?text=RealEstate+" alt="RealEstate+ Logo">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">"</div>
+                                    <p class="testimonial-text">The real estate solutions provided by GoLeverage.AI gave us a competitive edge in the market. Their property valuation AI is incredibly accurate and has streamlined our entire process.</p>
+                                    <div class="client-info">- Michael Chen, Real Estate Investor</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="card-content">
+                                <div class="client-logo">
+                                    <img src="https://via.placeholder.com/120x60/27AE60/FFFFFF?text=OptiFlow" alt="OptiFlow Logo">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">"</div>
+                                    <p class="testimonial-text">Working with GoLeverage.AI has been a game-changer. Their agentic AI solutions work autonomously and have freed up our team to focus on strategic initiatives rather than routine tasks.</p>
+                                    <div class="client-info">- Emily Rodriguez, Operations Director</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="card-content">
+                                <div class="client-logo">
+                                    <img src="https://via.placeholder.com/120x60/9B59B6/FFFFFF?text=InnovateLab" alt="InnovateLab Logo">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">"</div>
+                                    <p class="testimonial-text">The AI automation tools from GoLeverage.AI have revolutionized our workflow. We've seen a 250% increase in productivity and our clients are amazed by the results we deliver.</p>
+                                    <div class="client-info">- David Park, CTO InnovateLab</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="card-content">
+                                <div class="client-logo">
+                                    <img src="https://via.placeholder.com/120x60/F39C12/FFFFFF?text=DataDriven" alt="DataDriven Logo">
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">"</div>
+                                    <p class="testimonial-text">GoLeverage.AI's machine learning models have given us insights we never thought possible. Their predictive analytics have helped us make better business decisions and stay ahead of the competition.</p>
+                                    <div class="client-info">- Lisa Thompson, Data Analyst</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Navigation -->
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <button class="carousel-arrow carousel-arrow-prev" aria-label="Previous testimonial">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-arrow carousel-arrow-next" aria-label="Next testimonial">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="carousel-pagination">
+                        <button class="pagination-dot active" data-slide="0" aria-label="Go to testimonial 1"></button>
+                        <button class="pagination-dot" data-slide="1" aria-label="Go to testimonial 2"></button>
+                        <button class="pagination-dot" data-slide="2" aria-label="Go to testimonial 3"></button>
+                        <button class="pagination-dot" data-slide="3" aria-label="Go to testimonial 4"></button>
+                        <button class="pagination-dot" data-slide="4" aria-label="Go to testimonial 5"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- CTA Section -->
     <section class="section">
@@ -288,162 +267,112 @@
     </footer>
 
 <script>
-        // Mobile menu toggle
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const navMenu = document.getElementById('navMenu');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Tab functionality
-        const tabs = document.querySelectorAll('.tab');
-        const tabContents = document.querySelectorAll('.tab-content');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const targetTab = tab.getAttribute('data-tab');
-                
-                // Remove active class from all tabs and contents
-                tabs.forEach(t => t.classList.remove('active'));
-                tabContents.forEach(content => content.classList.remove('active'));
-                
-                // Add active class to clicked tab and corresponding content
-                tab.classList.add('active');
-                document.getElementById(targetTab).classList.add('active');
-            });
-        });
-
-        // Form submission
-        document.getElementById('heroForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your interest! We will contact you soon.');
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all cards and sections
-        document.querySelectorAll('.card, .section').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-
-       document.addEventListener('DOMContentLoaded', function() {
-    // Testimonials Carousel Functionality
-
-    // Get all testimonial cards
-    const cards = document.querySelectorAll('.testimonial-card');
-    // Get navigation arrow elements
-    const prevBtn = document.querySelector('.carousel-arrow-prev');
-    const nextBtn = document.querySelector('.carousel-arrow-next');
-    // Get pagination dot elements
-    const dots = document.querySelectorAll('.pagination-dot');
-
-    let current = 0;
-    let intervalId;
-
-    // Function to show the active card and update dots
-    function showCard(idx) {
-        cards.forEach((card, i) => {
-            card.classList.toggle('active', i === idx);
-        });
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === idx);
-        });
-        current = idx;
-    }
-
-    // Show the next card
-    function nextCard() {
-        showCard((current + 1) % cards.length);
-    }
-
-    // Show the previous card
-    function prevCard() {
-        showCard((current - 1 + cards.length) % cards.length);
-    }
-
-    // Go to a specific card
-    function gotoCard(idx) {
-        showCard(idx);
-    }
-
-    // Arrow listeners
-    if (nextBtn) {
-        nextBtn.addEventListener('click', function() {
-            nextCard();
-            restartInterval();
-        });
-    }
-    if (prevBtn) {
-        prevBtn.addEventListener('click', function() {
-            prevCard();
-            restartInterval();
-        });
-    }
-
-    // Dot listeners
-    dots.forEach(function(dot, idx) {
-        dot.addEventListener('click', function() {
-            gotoCard(idx);
-            restartInterval();
-        });
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navMenu = document.getElementById('navMenu');
+    mobileMenuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
     });
 
-    // Auto-advance every 5 seconds
-    function startInterval() {
-        intervalId = setInterval(nextCard, 5000);
-    }
-    function stopInterval() {
-        clearInterval(intervalId);
-    }
-    function restartInterval() {
-        stopInterval();
-        startInterval();
-    }
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
 
-    // Initialize carousel
-    if (cards.length > 0) {
-        showCard(0);
-        startInterval();
-    }
-});
-    </script>
+    // Add animation on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+    document.querySelectorAll('.card, .section').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
 
-    </body>
+    // --- Testimonials Carousel Functionality ---
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.testimonial-card');
+        const prevBtn = document.querySelector('.carousel-arrow-prev');
+        const nextBtn = document.querySelector('.carousel-arrow-next');
+        const dots = document.querySelectorAll('.pagination-dot');
+        let current = 0;
+        let intervalId;
+
+        function showCard(idx) {
+            cards.forEach((card, i) => {
+                card.classList.toggle('active', i === idx);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === idx);
+            });
+            current = idx;
+        }
+        function nextCard() {
+            showCard((current + 1) % cards.length);
+        }
+        function prevCard() {
+            showCard((current - 1 + cards.length) % cards.length);
+        }
+        function gotoCard(idx) {
+            showCard(idx);
+        }
+
+        // Arrow listeners
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() {
+                nextCard();
+                restartInterval();
+            });
+        }
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() {
+                prevCard();
+                restartInterval();
+            });
+        }
+
+        // Dot listeners
+        dots.forEach(function(dot, idx) {
+            dot.addEventListener('click', function() {
+                gotoCard(idx);
+                restartInterval();
+            });
+        });
+
+        // Auto-advance every 5 seconds
+        function startInterval() {
+            intervalId = setInterval(nextCard, 5000);
+        }
+        function stopInterval() {
+            clearInterval(intervalId);
+        }
+        function restartInterval() {
+            stopInterval();
+            startInterval();
+        }
+
+        // Initialize carousel
+        if (cards.length > 0) {
+            showCard(0);
+            startInterval();
+        }
+    });
+    // --- End Testimonials Carousel ---
+</script>
+</body>
 </html>
