@@ -29,8 +29,6 @@ goleverage-website/
 ├── contact.html            # Contact page
 ├── styles.css              # Master CSS file
 ├── assets/                 # Asset directory
-│   ├── LightsOnStaffing_Logo.webp
-│   ├── Steven_Glynns.jpeg
 │   ├── LI-In-Bug.png
 │   └── LightsOnStaffing_Home.jpg
 └── README.md               # This file
@@ -40,10 +38,7 @@ goleverage-website/
 
 Please add the following assets to the `assets/` directory:
 
-- `LightsOnStaffing_Logo.webp` - Company logo
-- `Steven_Glynns.jpeg` - CEO headshot
 - `LI-In-Bug.png` - LinkedIn icon
-- `LightsOnStaffing_Home.jpg` - Hero background image
 
 ## Local Development
 
