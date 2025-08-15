@@ -1115,3 +1115,145 @@ p  { font-size: 1rem;   font-weight: 400; } /* ~16px */
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
+
+  // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navMenu = document.getElementById('navMenu');
+    mobileMenuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Add animation on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+    document.querySelectorAll('.card, .section').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+
+    // --- Testimonials Carousel Functionality ---
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.testimonial-card');
+        const prevBtn = document.querySelector('.carousel-arrow-prev');
+        const nextBtn = document.querySelector('.carousel-arrow-next');
+        const dots = document.querySelectorAll('.pagination-dot');
+        let current = 0;
+        let intervalId;
+
+        function showCard(idx) {
+            cards.forEach((card, i) => {
+                card.classList.toggle('active', i === idx);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === idx);
+            });
+            current = idx;
+        }
+        function nextCard() {
+            showCard((current + 1) % cards.length);
+        }
+        function prevCard() {
+            showCard((current - 1 + cards.length) % cards.length);
+        }
+        function gotoCard(idx) {
+            showCard(idx);
+        }
+
+        // Arrow listeners
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() {
+                nextCard();
+                restartInterval();
+            });
+        }
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() {
+                prevCard();
+                restartInterval();
+            });
+        }
+
+        // Dot listeners
+        dots.forEach(function(dot, idx) {
+            dot.addEventListener('click', function() {
+                gotoCard(idx);
+                restartInterval();
+            });
+        });
+
+        // Auto-advance every 5 seconds
+        function startInterval() {
+            intervalId = setInterval(nextCard, 5000);
+        }
+        function stopInterval() {
+            clearInterval(intervalId);
+        }
+        function restartInterval() {
+            stopInterval();
+            startInterval();
+        }
+
+        // Initialize carousel
+        if (cards.length > 0) {
+            showCard(0);
+            startInterval();
+        }
+    });
+    // --- End Testimonials Carousel ---
+  
+.carousel-track {
+            position: relative;
+            min-height: 200px;
+        }
+        .testimonial-card {
+            display: none;
+            transition: opacity 0.4s ease;
+        }
+        .testimonial-card.active {
+            display: block;
+        }
+        .carousel-arrow {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+        .carousel-pagination {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .pagination-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            border: none;
+            display: inline-block;
+            margin: 0 4px;
+            cursor: pointer;
+        }
+        .pagination-dot.active {
+            background: #ff0000;
