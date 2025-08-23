@@ -1,11 +1,4 @@
-/* GoLeverage.AI Master CSS */
-/* Color Palette: #ff0000 (red), #ff00ed (magenta), #0038ff (blue), white, black */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* GoLeverage.AI Master CSS */ /* Color Palette: #ff0000 (red), #ff00ed (magenta), #0038ff (blue), white, black */ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
     --primary-red: #ff0000;
